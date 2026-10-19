@@ -76,3 +76,188 @@ main figure img {
 main figure img:hover{
     box-shadow: 0px 0px 6px #ff007f;
 }
+
+
+/* Portfolio sections */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hero,
+#projetos,
+#habilidades,
+#experiencia,
+#contato {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+    padding: 64px 0;
+    scroll-margin-top: 30px;
+}
+
+.hero {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.hero h2 {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    max-width: 800px;
+    margin: 12px 0 20px;
+}
+
+.hero > p:not(.eyebrow) {
+    max-width: 720px;
+    line-height: 1.8;
+    margin-bottom: 14px;
+}
+
+.eyebrow,
+.project-type {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    opacity: 0.75;
+}
+
+#projetos > h2,
+#habilidades > h2,
+#experiencia > h2,
+#contato > h2 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    margin: 12px 0 18px;
+}
+
+#projetos > p:not(.eyebrow),
+#contato > p:not(.eyebrow) {
+    max-width: 720px;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+.projects-grid,
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.project-card,
+.skills-grid article,
+.experience-card {
+    padding: 25px;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius: 16px;
+    background: rgba(128, 128, 128, 0.04);
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.project-icon {
+    font-size: 2rem;
+}
+
+.project-card h3,
+.skills-grid h3,
+.experience-card h3 {
+    font-size: 1.2rem;
+}
+
+.project-card > p:not(.project-type),
+.skills-grid p,
+.experience-card p {
+    line-height: 1.7;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tags span,
+.project-status {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+    border-radius: 20px;
+    background: rgba(0, 150, 136, 0.12);
+}
+
+.project-card a,
+.contact-links a,
+.button {
+    display: inline-block;
+    margin-top: auto;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 1px solid currentColor;
+}
+
+.button {
+    margin-top: 18px;
+}
+
+.project-card a:hover,
+.contact-links a:hover,
+.button:hover {
+    opacity: 0.75;
+}
+
+.upcoming {
+    border-style: dashed;
+}
+
+.project-status {
+    margin-top: auto;
+}
+
+.skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.skills-grid article,
+.experience-card {
+    margin-bottom: 15px;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 800px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    .projects-grid,
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    header nav {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}
