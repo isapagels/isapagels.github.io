@@ -1,89 +1,238 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio</title>
-     <!--CSS-->
-     <link rel="stylesheet" href="./Css/reset.css">
-     <link rel="stylesheet" href="./Css/header.css">
-     <link rel="stylesheet" href="./Css/main.css">
-     <link rel="stylesheet" href="responsive.css">
-    <!--FONTS-->
+
+    <meta name="description"
+          content="Portfólio profissional de Isabelly Pagels: análise de dados, projetos, habilidades e experiência.">
+
+    <title>Isabelly Pagels | Data Analytics Portfolio</title>
+
+    <link rel="stylesheet" href="./Css/reset.css">
+    <link rel="stylesheet" href="./Css/header.css">
+    <link rel="stylesheet" href="./Css/main.css">
+    <link rel="stylesheet" href="./responsive.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
+
 <body>
     <header>
-        <h1>Dev.Isa</h1>
+        <h1>Isabelly Pagels</h1>
 
-        <nav>
-            <a href="https://www.linkedin.com/in/isabelly-pagels-bb51b4176/" target="_blank"> <img src="img/linkedin.png" alt="ícone LinkedIn" width="20" height="20">
-            </a>
-
-            <a href="https://github.com/isapagels" target="_blank"> <img src="img/github.png" alt="ícone GitHub" width="20" height="20">
-            </a>
-
-            <a href="https://instagram.com/isapagels?igshid=YmMyMTA2M2Y=" target="_blank"> <img src="img/instagram.png" alt="ícone Instagram" width="20" height="20">
-            </a>
-
-
-
-        
+        <nav aria-label="Navegação principal">
+            <a href="#sobre">Sobre</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#experiencia">Experiência</a>
+            <a href="#contato">Contato</a>
         </nav>
 
+        <nav aria-label="Redes sociais">
+            <a href="https://www.linkedin.com/in/isabelly-pagels-bb51b4176/"
+               target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+
+            <a href="https://github.com/isapagels"
+               target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        </nav>
     </header>
+
     <main>
-            <section class="main-content">
-                <article class="text">
-                    <h2>🙋‍♀️ Sobre mim</h2>
-                    <p>
-                        Olá, me chamo Isabelly (ou isa😊), tenho 19 anos e sou de São Paulo, Brasil.
-                        Estudante do curso superior de Ciência da Computação (UBC).
-                        Apaixonada por desenvolvimento de softwares.💕
+        <section id="sobre" class="hero">
+            <p class="eyebrow">PORTFÓLIO PROFISSIONAL</p>
 
-                    </p>
+            <h2>Transformando dados em insights.</h2>
 
-                </article>
+            <p>
+                Olá! Sou Isabelly Pagels, profissional da área de dados
+                e finanças, com interesse em análise de dados, qualidade
+                de dados e governança.
+            </p>
 
-                <aside class="techs">
-                    <h2>👩‍💻 Tecnologias </h2>
-                    <div class="cards-container">
-                        <div class="card">
-                            <img src="img/html.png" alt="Logo HTML5" >
-                        </div>
+            <p>
+                Neste espaço, compartilho projetos práticos e meu
+                desenvolvimento em ferramentas de análise e visualização
+                de dados.
+            </p>
 
-                        <div class="card">
-                            <img src="img/css-3.png" alt="Logo CSS3" >
-                        </div>
-
-                        <div class="card">
-                            <img src="img/js.png" alt="Logo JavaScript" >
-                        </div>
-
-                        
-                        <div class="card">
-                            <img src="img/physics.png" alt="Logo React" >
-                        </div>
-
-                    </div>
-
-                </aside>
-
-            </section>
-
-            <figure>
-                <img src="./img/isa.jpeg" alt="Imagem de Isabelly Pagels">
-                <figcaption>Isabelly Constantino Pagels</figcaption>
-            </figure>
+            <a class="button" href="#projetos">Explorar projetos ↓</a>
         </section>
 
+        <section id="projetos">
+            <p class="eyebrow">MEU TRABALHO</p>
+            <h2>Projetos em destaque</h2>
+
+            <p>
+                Projetos desenvolvidos para praticar ferramentas,
+                investigar dados e apresentar descobertas relevantes
+                para o negócio.
+            </p>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <div class="project-icon">📊</div>
+
+                    <p class="project-type">DATA ANALYTICS</p>
+                    <h3>Supermarket Sales Analysis</h3>
+
+                    <p>
+                        Análise exploratória de 1.000 transações de
+                        supermercado para investigar vendas por filial,
+                        categoria de produto, forma de pagamento e
+                        período.
+                    </p>
+
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>Matplotlib</span>
+                        <span>Seaborn</span>
+                    </div>
+
+                    <a
+                        href="https://github.com/isapagels/sales-data-analysis"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Ver código no GitHub ↗
+                    </a>
+                </article>
+
+                <article class="project-card upcoming">
+                    <div class="project-icon">🗃️</div>
+
+                    <p class="project-type">PRÓXIMO PROJETO</p>
+                    <h3>SQL Data Analysis</h3>
+
+                    <p>
+                        Projeto futuro para praticar consultas SQL,
+                        filtros, agregações, junções entre tabelas
+                        e análise de indicadores de negócio.
+                    </p>
+
+                    <div class="tags">
+                        <span>SQL</span>
+                        <span>Consultas</span>
+                        <span>KPIs</span>
+                    </div>
+
+                    <span class="project-status">
+                        Em planejamento
+                    </span>
+                </article>
+
+                <article class="project-card upcoming">
+                    <div class="project-icon">📈</div>
+
+                    <p class="project-type">PRÓXIMO PROJETO</p>
+                    <h3>Sales Performance Dashboard</h3>
+
+                    <p>
+                        Projeto futuro de visualização de indicadores
+                        de vendas em um dashboard interativo, com filtros
+                        e comparação de desempenho.
+                    </p>
+
+                    <div class="tags">
+                        <span>Power BI</span>
+                        <span>Dashboard</span>
+                        <span>Visualização</span>
+                    </div>
+
+                    <span class="project-status">
+                        Em planejamento
+                    </span>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <p class="eyebrow">FERRAMENTAS</p>
+            <h2>Habilidades</h2>
+
+            <div class="skills-grid">
+                <article>
+                    <h3>📊 Análise de dados</h3>
+                    <p>Python, Pandas e análise exploratória (EDA).</p>
+                </article>
+
+                <article>
+                    <h3>📉 Visualização</h3>
+                    <p>Matplotlib, Seaborn e apresentação de insights.</p>
+                </article>
+
+                <article>
+                    <h3>💼 Dados e negócios</h3>
+                    <p>Qualidade de dados, governança e indicadores.</p>
+                </article>
+
+                <article>
+                    <h3>🛠️ Ferramentas adicionais</h3>
+                    <p>SQL, Power BI e Excel, conforme meu desenvolvimento.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="experiencia">
+            <p class="eyebrow">TRAJETÓRIA</p>
+            <h2>Experiência e formação</h2>
+
+            <article class="experience-card">
+                <h3>Experiência profissional</h3>
+
+                <p>
+                    Atuação em ambiente multinacional na interface
+                    entre dados e finanças, com foco em processos,
+                    qualidade de dados e governança.
+                </p>
+            </article>
+
+            <article class="experience-card">
+                <h3>Formação acadêmica</h3>
+
+                <p>
+                    Ciência da Computação — UBC.
+                </p>
+            </article>
+        </section>
+
+        <section id="contato">
+            <p class="eyebrow">VAMOS NOS CONECTAR</p>
+            <h2>Entre em contato</h2>
+
+            <p>
+                Confira meus projetos, acompanhe meu desenvolvimento
+                ou conecte-se comigo profissionalmente.
+            </p>
+
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/isabelly-pagels-bb51b4176/"
+                   target="_blank" rel="noopener noreferrer">
+                    LinkedIn ↗
+                </a>
+
+                <a href="https://github.com/isapagels"
+                   target="_blank" rel="noopener noreferrer">
+                    GitHub ↗
+                </a>
+            </div>
+        </section>
     </main>
+
     <footer>
-        <span>
-            &copy; Isabelly Constantino Pagels, 2023 - Todos os direitos reservados.
-        </span>
+        <p>
+            &copy; <span id="year"></span> Isabelly Pagels.
+            Desenvolvido com dedicação.
+        </p>
     </footer>
+
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
 </body>
 </html>
