@@ -1,238 +1,208 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="Portfólio profissional de Isabelly Pagels: análise de dados, projetos, habilidades e experiência.">
-
+    <meta name="description" content="Portfólio profissional de Isabelly Pagels: análise de dados, projetos, habilidades e experiência.">
+    <meta name="theme-color" content="#11152c">
     <title>Isabelly Pagels | Data Analytics Portfolio</title>
 
     <link rel="stylesheet" href="./Css/reset.css">
     <link rel="stylesheet" href="./Css/header.css">
     <link rel="stylesheet" href="./Css/main.css">
-    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./Css/responsive.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <header>
-        <h1>Isabelly Pagels</h1>
+    <header class="site-header">
+        <a class="brand" href="#sobre" aria-label="Isabelly Pagels — início">Isabelly Pagels<span>.</span></a>
 
-        <nav aria-label="Navegação principal">
-            <a href="#sobre">Sobre</a>
+        <nav class="main-nav" aria-label="Navegação principal">
+            <a class="active" href="#sobre">Início</a>
             <a href="#projetos">Projetos</a>
             <a href="#habilidades">Habilidades</a>
             <a href="#experiencia">Experiência</a>
             <a href="#contato">Contato</a>
         </nav>
-
-        <nav aria-label="Redes sociais">
-            <a href="https://www.linkedin.com/in/isabelly-pagels-bb51b4176/"
-               target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-
-            <a href="https://github.com/isapagels"
-               target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-        </nav>
     </header>
 
     <main>
-        <section id="sobre" class="hero">
-            <p class="eyebrow">PORTFÓLIO PROFISSIONAL</p>
+        <section id="sobre" class="hero section-shell">
+            <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+            <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
 
-            <h2>Transformando dados em insights.</h2>
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="eyebrow-dot"></span> PORTFÓLIO PROFISSIONAL</p>
+                <h1>Transformando dados<br>em <span>insights.</span></h1>
 
-            <p>
-                Olá! Sou Isabelly Pagels, profissional da área de dados
-                e finanças, com interesse em análise de dados, qualidade
-                de dados e governança.
-            </p>
+                <p class="hero-intro">
+                    Olá! Sou Isabelly Pagels, profissional da área de dados e finanças,
+                    com interesse em análise de dados, qualidade de dados e governança.
+                </p>
+                <p class="hero-description">
+                    Neste espaço, compartilho projetos práticos e meu desenvolvimento
+                    em ferramentas de análise e visualização de dados.
+                </p>
 
-            <p>
-                Neste espaço, compartilho projetos práticos e meu
-                desenvolvimento em ferramentas de análise e visualização
-                de dados.
-            </p>
+                <a class="button" href="#projetos">Explorar projetos <span aria-hidden="true">↓</span></a>
+            </div>
 
-            <a class="button" href="#projetos">Explorar projetos ↓</a>
+            <div class="hero-visual">
+                <div class="portrait-frame">
+                    <!-- Substitua o caminho abaixo pela localização da sua foto no repositório. -->
+                    <img src="./images/isabelly.jpg" alt="Foto de Isabelly Pagels"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="portrait-placeholder" aria-hidden="true">
+                        <span>IP</span>
+                        <small>Adicione sua foto</small>
+                    </div>
+                </div>
+                <div class="handwritten-note" aria-label="Dados, análise e resultados">
+                    <span>Dados</span>
+                    <span>+</span>
+                    <span>Análise</span>
+                    <span>+</span>
+                    <span>Resultados</span>
+                    <i aria-hidden="true"></i>
+                </div>
+                <div class="orbit orbit-one" aria-hidden="true"></div>
+                <div class="orbit orbit-two" aria-hidden="true"></div>
+            </div>
         </section>
 
-        <section id="projetos">
-            <p class="eyebrow">MEU TRABALHO</p>
-            <h2>Projetos em destaque</h2>
-
-            <p>
-                Projetos desenvolvidos para praticar ferramentas,
-                investigar dados e apresentar descobertas relevantes
-                para o negócio.
-            </p>
+        <section id="projetos" class="section-shell content-section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">MEU TRABALHO</p>
+                    <h2>Projetos em destaque</h2>
+                    <p class="section-description">
+                        Projetos desenvolvidos para praticar ferramentas, investigar dados
+                        e apresentar descobertas relevantes para o negócio.
+                    </p>
+                </div>
+                <span class="heading-line" aria-hidden="true"></span>
+            </div>
 
             <div class="projects-grid">
-
                 <article class="project-card">
-                    <div class="project-icon">📊</div>
-
-                    <p class="project-type">DATA ANALYTICS</p>
-                    <h3>Supermarket Sales Analysis</h3>
-
-                    <p>
-                        Análise exploratória de 1.000 transações de
-                        supermercado para investigar vendas por filial,
-                        categoria de produto, forma de pagamento e
-                        período.
-                    </p>
-
-                    <div class="tags">
-                        <span>Python</span>
-                        <span>Pandas</span>
-                        <span>Matplotlib</span>
-                        <span>Seaborn</span>
+                    <div class="project-card-top">
+                        <div class="project-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M4 19h16M6 16v-5h3v5M11 16V6h3v10M16 16V9h3v7"/></svg>
+                        </div>
+                        <p class="project-type">DATA ANALYTICS</p>
                     </div>
-
-                    <a
-                        href="https://github.com/isapagels/sales-data-analysis"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        Ver código no GitHub ↗
+                    <h3>Supermarket Sales Analysis</h3>
+                    <p class="project-description">
+                        Análise exploratória de 1.000 transações de supermercado para investigar
+                        vendas por filial, categoria de produto, forma de pagamento e período.
+                    </p>
+                    <div class="tags">
+                        <span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span>
+                    </div>
+                    <a class="project-link" href="https://github.com/isapagels/sales-data-analysis"
+                       target="_blank" rel="noopener noreferrer">
+                        <span class="github-mark" aria-hidden="true">⌘</span> Ver código no GitHub <span aria-hidden="true">↗</span>
                     </a>
                 </article>
 
                 <article class="project-card upcoming">
-                    <div class="project-icon">🗃️</div>
-
-                    <p class="project-type">PRÓXIMO PROJETO</p>
-                    <h3>SQL Data Analysis</h3>
-
-                    <p>
-                        Projeto futuro para praticar consultas SQL,
-                        filtros, agregações, junções entre tabelas
-                        e análise de indicadores de negócio.
-                    </p>
-
-                    <div class="tags">
-                        <span>SQL</span>
-                        <span>Consultas</span>
-                        <span>KPIs</span>
+                    <div class="project-card-top">
+                        <div class="project-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="7.5" ry="3"/><path d="M4.5 5v5c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3V5M4.5 10v5c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3v-5M4.5 15v4c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3v-4"/></svg>
+                        </div>
+                        <p class="project-type">PRÓXIMO PROJETO</p>
                     </div>
-
-                    <span class="project-status">
-                        Em planejamento
-                    </span>
+                    <h3>SQL Data Analysis</h3>
+                    <p class="project-description">
+                        Projeto futuro para praticar consultas SQL, filtros, agregações,
+                        junções entre tabelas e análise de indicadores de negócio.
+                    </p>
+                    <div class="tags"><span>SQL</span><span>Consultas</span><span>KPIs</span></div>
+                    <span class="project-status"><span></span> Em planejamento</span>
                 </article>
 
                 <article class="project-card upcoming">
-                    <div class="project-icon">📈</div>
-
-                    <p class="project-type">PRÓXIMO PROJETO</p>
-                    <h3>Sales Performance Dashboard</h3>
-
-                    <p>
-                        Projeto futuro de visualização de indicadores
-                        de vendas em um dashboard interativo, com filtros
-                        e comparação de desempenho.
-                    </p>
-
-                    <div class="tags">
-                        <span>Power BI</span>
-                        <span>Dashboard</span>
-                        <span>Visualização</span>
+                    <div class="project-card-top">
+                        <div class="project-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M3 18l6-6 4 3 8-9M15 6h6v6"/></svg>
+                        </div>
+                        <p class="project-type">PRÓXIMO PROJETO</p>
                     </div>
-
-                    <span class="project-status">
-                        Em planejamento
-                    </span>
-                </article>
-
-            </div>
-        </section>
-
-        <section id="habilidades">
-            <p class="eyebrow">FERRAMENTAS</p>
-            <h2>Habilidades</h2>
-
-            <div class="skills-grid">
-                <article>
-                    <h3>📊 Análise de dados</h3>
-                    <p>Python, Pandas e análise exploratória (EDA).</p>
-                </article>
-
-                <article>
-                    <h3>📉 Visualização</h3>
-                    <p>Matplotlib, Seaborn e apresentação de insights.</p>
-                </article>
-
-                <article>
-                    <h3>💼 Dados e negócios</h3>
-                    <p>Qualidade de dados, governança e indicadores.</p>
-                </article>
-
-                <article>
-                    <h3>🛠️ Ferramentas adicionais</h3>
-                    <p>SQL, Power BI e Excel, conforme meu desenvolvimento.</p>
+                    <h3>Sales Performance Dashboard</h3>
+                    <p class="project-description">
+                        Projeto futuro de visualização de indicadores de vendas em um dashboard
+                        interativo, com filtros e comparação de desempenho.
+                    </p>
+                    <div class="tags"><span>Power BI</span><span>Dashboard</span><span>Visualização</span></div>
+                    <span class="project-status"><span></span> Em planejamento</span>
                 </article>
             </div>
         </section>
 
-        <section id="experiencia">
-            <p class="eyebrow">TRAJETÓRIA</p>
-            <h2>Experiência e formação</h2>
+        <section class="lower-sections section-shell">
+            <section id="habilidades" class="lower-column">
+                <p class="eyebrow">FERRAMENTAS</p>
+                <h2>Habilidades</h2>
+                <div class="skills-grid">
+                    <article class="skill-item">
+                        <div class="small-icon" aria-hidden="true">▥</div>
+                        <div><h3>Análise de dados</h3><p>Python, Pandas e análise exploratória (EDA).</p></div>
+                    </article>
+                    <article class="skill-item">
+                        <div class="small-icon" aria-hidden="true">◉</div>
+                        <div><h3>Visualização</h3><p>Matplotlib, Seaborn e apresentação de insights.</p></div>
+                    </article>
+                    <article class="skill-item">
+                        <div class="small-icon" aria-hidden="true">▤</div>
+                        <div><h3>Dados e negócios</h3><p>Qualidade de dados, governança e indicadores.</p></div>
+                    </article>
+                    <article class="skill-item">
+                        <div class="small-icon" aria-hidden="true">⌘</div>
+                        <div><h3>Ferramentas adicionais</h3><p>SQL, Power BI e Excel, conforme meu desenvolvimento.</p></div>
+                    </article>
+                </div>
+            </section>
 
-            <article class="experience-card">
-                <h3>Experiência profissional</h3>
+            <section id="experiencia" class="lower-column">
+                <p class="eyebrow">TRAJETÓRIA</p>
+                <h2>Experiência e formação</h2>
+                <article class="timeline-item">
+                    <div class="small-icon" aria-hidden="true">▣</div>
+                    <div><h3>Experiência profissional</h3><p>Atuação em ambiente multinacional na interface entre dados e finanças, com foco em processos, qualidade de dados e governança.</p></div>
+                </article>
+                <article class="timeline-item">
+                    <div class="small-icon" aria-hidden="true">⌂</div>
+                    <div><h3>Formação acadêmica</h3><p>Ciência da Computação — UBC.</p></div>
+                </article>
+            </section>
 
-                <p>
-                    Atuação em ambiente multinacional na interface
-                    entre dados e finanças, com foco em processos,
-                    qualidade de dados e governança.
-                </p>
-            </article>
-
-            <article class="experience-card">
-                <h3>Formação acadêmica</h3>
-
-                <p>
-                    Ciência da Computação — UBC.
-                </p>
-            </article>
-        </section>
-
-        <section id="contato">
-            <p class="eyebrow">VAMOS NOS CONECTAR</p>
-            <h2>Entre em contato</h2>
-
-            <p>
-                Confira meus projetos, acompanhe meu desenvolvimento
-                ou conecte-se comigo profissionalmente.
-            </p>
-
-            <div class="contact-links">
-                <a href="https://www.linkedin.com/in/isabelly-pagels-bb51b4176/"
-                   target="_blank" rel="noopener noreferrer">
-                    LinkedIn ↗
-                </a>
-
-                <a href="https://github.com/isapagels"
-                   target="_blank" rel="noopener noreferrer">
-                    GitHub ↗
-                </a>
-            </div>
+            <section id="contato" class="lower-column contact-column">
+                <p class="eyebrow">VAMOS NOS CONECTAR</p>
+                <h2>Entre em contato</h2>
+                <p>Confira meus projetos, acompanhe meu desenvolvimento ou conecte-se comigo profissionalmente.</p>
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/isabelly-pagels-bb51b4176/" target="_blank" rel="noopener noreferrer">
+                        <span aria-hidden="true">in</span> LinkedIn ↗
+                    </a>
+                    <a href="https://github.com/isapagels" target="_blank" rel="noopener noreferrer">
+                        <span aria-hidden="true">⌘</span> GitHub ↗
+                    </a>
+                </div>
+            </section>
         </section>
     </main>
 
-    <footer>
-        <p>
-            &copy; <span id="year"></span> Isabelly Pagels.
-            Desenvolvido com dedicação.
-        </p>
+    <footer class="site-footer">
+        <p><strong>Isabelly Pagels</strong> <span id="year"></span><span>•</span> Dados <span>•</span> Finanças <span>•</span> Insights</p>
+        <p>Juntos, transformamos dados em melhores decisões. <span class="footer-heart">♡</span></p>
     </footer>
 
     <script>
-        document.getElementById("year").textContent =
-            new Date().getFullYear();
+        // Mantém o ano do rodapé atualizado.
+        document.getElementById("year")?.textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
